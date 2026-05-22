@@ -16,8 +16,8 @@
       $personal_datas = ['id' =>  '1', '名前' =>  '侍太郎', '年齢' =>  '30'];
 
        //  配列$user_namesの要素を1つずつ順番に出力する
-       foreach ($personal_datas as $personal_data) {
-           echo $personal_data . '<br>';
+       foreach ($personal_datas as $key => $value) {
+           echo "{$key}:{$value}" .'<br>';
        }
        ?>
    </p>
