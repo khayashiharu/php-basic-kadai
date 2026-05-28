@@ -15,11 +15,10 @@
         public $price;
 
         // メソッドを定義する
-        public function show_price(string $price) {
-          $this->price = $price;
+        public function show_price() {
           echo $this->price.'<br>';
         }
-    }
+      }
 
       class Animal{
         public $name;
@@ -27,8 +26,7 @@
         public $weight;
 
         // メソッドを定義する
-        public function show_height(string $height) {
-          $this->height = $height;
+        public function show_height() {
           echo $this->height. '<br>';
         }
       }
@@ -53,12 +51,10 @@
 
 
        // メソッドにアクセスして実行する
-       $vege2 = new Food();
-       $vege2->show_price('250');
+       $vege->show_price();
 
        // メソッドにアクセスして実行する
-       $dog2 = new Animal();
-       $dog2->show_height('5000');
+       $dog->show_height();
 
        ?>
    </p>
