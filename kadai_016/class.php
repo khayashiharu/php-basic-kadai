@@ -14,6 +14,12 @@
         public $name;
         public $price;
 
+      // コンストラクタ
+      public function __construct($name, $price) {
+        $this->name = $name;
+        $this->price = $price;
+      }
+
         // メソッドを定義する
         public function show_price() {
           echo $this->price.'<br>';
@@ -25,6 +31,13 @@
         public $height;
         public $weight;
 
+        // コンストラクタ
+        public function __construct($name, $height, $weight) {
+          $this->name = $name;
+          $this->height = $height;
+          $this->weight = $weight;
+        }
+
         // メソッドを定義する
         public function show_height() {
           echo $this->height. '<br>';
@@ -32,20 +45,13 @@
       }
 
        // インスタンス化する
-       $vege = new Food();
-       $vege->name='potato';
-       $vege->price='250';
-       //echo $vege->name;
+       $vege = new Food("potato", 250);
        print_r($vege);
        echo '<br>';
 
 
        // インスタンス化する
-       $dog = new Animal();
-       $dog->name='dog';
-       $dog->height='60';
-       $dog->weight='5000';
-       //echo $dog->name;
+       $dog = new Animal("dog", 60, 5000);
        print_r($dog);
        echo '<br>';
 
