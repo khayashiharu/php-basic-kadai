@@ -1,5 +1,4 @@
-        <!-- Course Sidebar -->
-        <div class="col-lg-4" style="background-color: #2b7b8e33">
+
           <!-- sidebar-main に切り出す -->
           <div class="sidebar">
             <div class="category">
